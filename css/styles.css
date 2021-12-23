@@ -27,9 +27,49 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* HEADER */
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
 
-.logo {
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  .container {
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+      outline: 1px solid red;
+  }
+
+/* -----------------------HEADER------------------- */
+.header {
+    background-color: var(--primary-white-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-logo,
+.footer-logo {
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: bold;
@@ -73,9 +113,14 @@ body {
     color: var(--accent-color);
 }
 
-/* main */
+/* -------------------------main--------------------------------- */
 .hero {
     background-color: var(--background-color-hero);
+}
+
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -86,6 +131,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -105,11 +151,24 @@ body {
     color: var(--title-text-color);
 }
 
-/* Заголовки h1, h2 скрытые - которые нужны только для определения
-- решил в белый цвет залить. */
-.section-titl,
-.portfol-heading {
-    color: var(--primary-white-color);
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.working {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--portfolio-btn-color);
+}
+
+.img-team {
+    margin-bottom: 30px;
 }
 
 /* Заголовки h2 */
@@ -118,6 +177,7 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-bottom: 50px;
     color: var(--title-text-color);
 }
 
@@ -126,6 +186,7 @@ body {
     font-weight: bold;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 }
 
@@ -137,6 +198,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 }
 
@@ -147,11 +209,26 @@ body {
     color: var(--primary-text-color);
 }
 
-/* footer */
+/* -----------------------------footer-------------------------- */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-color-hero);
 }
-.footer-logo,
+
+.footer-address {
+    margin-top: 20px;
+}
+
+.item-linki {
+    margin-bottom: 9px;
+}
+
+.footer-mail {
+    margin-bottom: 9px;
+}
+
+.footer-logos,
 .item-linki {
     color: var(--primary-white-color);
 }
@@ -160,7 +237,7 @@ body {
 }
 
 
-/* Стили для Portfolio */
+/* -------------------Стили для Portfolio------------------- */
 
 .portfolio-button {
     font-family: Roboto;
