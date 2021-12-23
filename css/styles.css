@@ -64,8 +64,7 @@ img {
 /* -----------------------HEADER------------------- */
 .header {
     background-color: var(--primary-white-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -88,6 +87,14 @@ img {
 
 .logotype {
     color: var(--title-text-color);
+}
+
+.header-item a,
+.auth-mail a,
+.auth-tel a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 
 .header-item:not(:last-child) {
@@ -184,6 +191,19 @@ img {
     display: flex;
 }
 
+.work-list,
+.team-list {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.work-item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
 .about {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -202,6 +222,20 @@ img {
 
 .img-team {
     margin-bottom: 30px;
+}
+
+.item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.team-face {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 /* Заголовки h2 */
@@ -294,6 +328,25 @@ img {
     color: var(--primary-white-color);
 }
 
+.portfolio-foto {
+    padding-top: 0;
+    padding-bottom: 114px;
+    background-color: var(--primary-white-color);
+}
+
+.portlist {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.portfolio-list {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
 .portfolio-list-heading {
     font-weight: bold;
     font-size: 18px;
@@ -308,5 +361,12 @@ img {
     color: var(--primary-text-color);
 }
 
+.card-content {
+    padding: 20px 24px;
+}
 
+.card {
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
 
