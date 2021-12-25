@@ -144,9 +144,6 @@ img {
 /* -------------------------main--------------------------------- */
 .hero {
     background-color: var(--background-color-hero);
-}
-
-.hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -222,21 +219,21 @@ img {
     background-color: var(--portfolio-btn-color);
 }
 
-.img-team {
-    margin-bottom: 30px;
-}
-
 .item {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-face {
     background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -314,18 +311,19 @@ img {
 /* -------------------Стили для Portfolio------------------- */
 
 .portfolio-button {
+    display: inline-block;
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.63;
     text-align: center;
     cursor: pointer;
     background-color: var(--portfolio-btn-color);
     color: var(--title-text-color);
     border-radius: 4px;
-    border-color: transparent;
-    width: 128px;
-    height: 38px;
+    border: none;
+    padding: 6px 22px;
+    min-width: 70px;
 }
 
 .portsection-item:not(:last-child) {
@@ -341,9 +339,9 @@ img {
                 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-foto {
-    padding-top: 0;
-    padding-bottom: 114px;
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--primary-white-color);
 }
 
@@ -377,16 +375,15 @@ img {
 
 .card-content {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 
 .section-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
